@@ -549,7 +549,7 @@ h3{
    opacity: 0.7;
 }
 
-.gdcmb-logo{
+.aqcmb-logo{
 	width: 422px;
 	max-width: 90%;
 	margin: 0 auto;
@@ -576,7 +576,7 @@ overflow: hidden;
 
 }	
 
-.gdcmb-logo-wrap{
+.aqcmb-logo-wrap{
     text-align: center;
     margin-bottom: 50px;	
 }
@@ -752,7 +752,7 @@ overflow: hidden;
 	margin-right: 55px;
 	text-align: left !important;
 }
-.gdcmb-logo-wrap {
+.aqcmb-logo-wrap {
     margin-right: 40px;
 }
 }
