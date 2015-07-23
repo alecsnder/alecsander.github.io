@@ -4,6 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
+
 <meta charset="utf-8">
 <meta name="description" content="Im Alexander (Alecsander) Quezada Chavez, System Engineer graduate in University Peruana de Ciencias Aplicadas, Project Managment Specialist, I can give a great quality to your company" />
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
@@ -20,7 +21,25 @@
 <link type="text/css" media="screen" rel="stylesheet" href="awwwards.css" />
 
 <script src="js/modernizr-2.6.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    if (localStorage['visited'] != "101100011011100000") {
+        //$('.content-wrap').prepend("NO PUEDES HACER TRAMPA");  
+        //$(".content-wrap").html("NO VALE HACER TRAMPA");
+        $(document.body).replaceWith('NO PUEDES HACER TRAMPA');
 
+        window.location.href = "registrate.html";
+        return false;
+    }
+    /*var yetVisited = localStorage['visited'];
+    if (!yetVisited) {
+        // open popup
+        localStorage['visited'] = "yes";
+    }*/
+});
+
+</script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-6081441-5']);
@@ -31,15 +50,8 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-<script>
-$(document).ready(function() {
-    var yetVisited = localStorage['visited'];
-    if (!yetVisited) {
-        // open popup
-        localStorage['visited'] = "yes";
-    }
-});
-</script>
+
+
 
 </head>
 
@@ -48,12 +60,13 @@ $(document).ready(function() {
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
+
 <nav id="mainnav">
 <ul>
-    <li><a href="#alecsander">About</a></li>
-    <li><a href="#alecsander1">Project</a></li>
-    <li><a href="#alecsander2">Skills</a></li>
-    <li><a href="#alecsander3">Exp</a></li>
+    <li><a href="#alecsander">1</a></li>
+    <li><a href="#alecsander1">2</a></li>
+    <li><a href="#alecsander2">3</a></li>
+    <li><a href="#alecsander3">4</a></li>
     <li><a href="#alecsander4">5</a></li>
     <li><a href="#alecsander5">6</a></li>
     <li><a href="#alecsander6">7</a></li>
@@ -66,20 +79,16 @@ $(document).ready(function() {
 <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
 <section class="noback back">
 <div class="content-wrap cf opening">
-    
-    <img class="alecs-logo" src="img/logo-alecsander-quezada-chavez.png">
     <div>
-        <div class="redondo">
-            <img src="img/back1_log.jpg">
+        <div class="redondo" style="font-size:15px;">
+            Bienvenido a 
         </div>
-        <div class="redondo">
-            <img src="img/back2_log.jpg">
-        </div>
-        <div class="redondo">
-            <img src="img/foto-alecs-instagram.jpg">
-        </div>
+        
     </div>
-    <h1>Alecsander Quezada Chávez, <br/> Systems Engineer</h1>
+    <img class="alecs-logo" src="img/logo-alecsander-quezada-chavez.png">
+    <br/><br/><br/>
+    <br/>
+    <h1>Instrucciones para el <br/> Sabado 1ero de Agosto</h1>
     <div class="arrow-wrap cf">
 	<a href="#alecsander"><img  class="gdc-arrow" src="img/gdc-arrow.png" alt="Arrow" /></a>
     </div>
@@ -90,7 +99,7 @@ $(document).ready(function() {
 <section class="noback_2 back">
 <!--<div class="content-wrap cf opening">-->
 <div class="content-wrap cf opening">
-    <h2>let me tell you more about me</h2>
+    <h2>Sigue bajando el Scroll...</h2>
 </div>
 </section>
 

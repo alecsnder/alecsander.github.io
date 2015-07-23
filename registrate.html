@@ -17,20 +17,29 @@
 			<h1>Ingresa la clave</h1>
 			<div>
 				<input type="text" placeholder="Tu Nombre" required="" id="username" />
+				<input type="hidden" name="aseguradora" value="101100011011100000" />
 			</div>
 			<div>
-				<input type="submit" value="Log in" />
+				<input type="submit" value="Log in" id="btnsubmit"/>
 			</div>
 		</form><!-- form -->
 	</section><!-- content -->
 </div><!-- container -->
 <script type="text/javascript">
 $(document).ready(function(){
-$("#verificar_vip").submit(function() {
+/*var yetVisited = localStorage['visited'];
+    if (!yetVisited) {
+        // open popup
+        localStorage['visited'] = "101100011011100000";
+    }*/
+
+$("#btnsubmit").click(function() {
   var a=$("#username").val();
   if(a=="01081984"){
-  	//alert(a);
-  	$.ajax({
+  	
+  	//window.location.href = "ind1cat3d_101100011011100000.html";
+  	//return false;
+  	/*$.ajax({
         type: 'POST',
         url: $(this).attr('action'),
         dataType: 'json',
@@ -41,11 +50,22 @@ $("#verificar_vip").submit(function() {
         })
     
     return false;
-  	
-  	//return;
+  	*/
+  	var yetVisited = localStorage['visited'];
+    if (!yetVisited) {
+        // open popup
+        localStorage['visited'] = "101100011011100000";
+    }
+
+  	$("#verificar_vip").attr("action","ind1cat3d_101100011011100000.html");
+  	//alert(a);
+    $("#verificar_vip").attr("method", "post");
+    $("#verificar_vip").submit();
+    return true;
+
   }else{
   	alert("no valido");
-  	//return false;
+  	return false;
   	//alert(a);
   	//return;
   }
