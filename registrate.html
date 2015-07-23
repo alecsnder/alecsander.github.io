@@ -13,7 +13,7 @@
 <body>
 <div class="container">
 	<section id="content">
-		<form action="">
+		<form action="" id="verificar_vip">
 			<h1>Ingresa la clave</h1>
 			<div>
 				<input type="text" placeholder="Tu Nombre" required="" id="username" />
@@ -24,13 +24,34 @@
 		</form><!-- form -->
 	</section><!-- content -->
 </div><!-- container -->
-<script>
+<script type="text/javascript">
 $(document).ready(function(){
 
 });
 
-$( "#content" ).click(function() {
-  alert( "Handler for .click() called." );
+$("#verificar_vip").submit(function() {
+  var a=$("#username").val();
+  if(a=="01081984"){
+  	//alert(a);
+  	$.ajax({
+        type: 'POST',
+        url: $(this).attr('action'),
+        dataType: 'json',
+        success: function(json) {
+          //window.location.replace("ind1cat3d_101100011011100000.html");
+           window.location.href = "ind1cat3d_101100011011100000.html";
+          }
+        })
+    
+    return false;
+  	
+  	//return;
+  }else{
+  	alert("no valido");
+  	//return false;
+  	//alert(a);
+  	//return;
+  }
 });
 </script>
 </body>
