@@ -57,11 +57,13 @@ $("#btnsubmit").click(function() {
         localStorage['visited'] = "101100011011100000";
     }
 
-  	$("#verificar_vip").attr("action","ind1cat3d_101100011011100000.html");
+  	//$("#verificar_vip").attr("action","ind1cat3d_101100011011100000.html");
   	//alert(a);
-    $("#verificar_vip").attr("method", "post");
-    $("#verificar_vip").submit();
-    return true;
+    //$("#verificar_vip").attr("method", "post");
+    //$("#verificar_vip").submit();
+    //return true;
+    window.location.href = "ind1cat3d_101100011011100000.html";
+    return false;
 
   }else{
   	alert("no valido");
